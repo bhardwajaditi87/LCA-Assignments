@@ -1,0 +1,14 @@
+#INPUT: Accept lengths of triangle as inputs from the user
+a=float(input("Enter the value of first side: "))
+b=float(input("Enter the value of second side: "))
+c=float(input("Enter the value of third side: "))
+if a**2 + b**2 == c**2 or a**2 + c**2 ==b**2 or b**2 + c**2 == a**2:
+    print("The triangle is a right angled triangle")
+else:
+    print("The triangle is not a right angled triangle")
+
+OUTPUT:
+Enter the value of first side:  3
+Enter the value of second side:  4
+Enter the value of third side:  5
+The triangle is a right angled triangle
