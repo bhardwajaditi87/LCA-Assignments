@@ -1,0 +1,73 @@
+#Operations on Dictionary, Tuple and Lists
+
+#Lists
+list=["Arjun", "Riya", "Madhav", "Aditi"]
+print(f"Original List: ", list)
+
+#Add - append
+list.append("Ishika")
+print(f"Added List: ", list)
+
+#Update - []
+list[2]="Janhvi"
+print(f"Updated List: ", list)
+
+#Delete - remove
+list.remove("Ishika")
+print(f"Deleted List: ", list)
+
+Output: 
+Original List:  ['Arjun', 'Riya', 'Madhav', 'Aditi']
+Added List:  ['Arjun', 'Riya', 'Madhav', 'Aditi', 'Ishika']
+Updated List:  ['Arjun', 'Riya', 'Janhvi', 'Aditi', 'Ishika']
+Deleted List:  ['Arjun', 'Riya', 'Janhvi', 'Aditi']
+
+
+
+#Tuple
+tuple=("Arjun", "Riya", "Madhav", "Aditi")
+print(f"Original Tuple: ", tuple)
+
+#Add - +
+tuple = tuple + ("Ishika",)
+print(f"Added Tuple: ", tuple)
+
+#Update
+tuple=("Arjun", "Piya", "Madhav", "Aditi", "Ishika")
+print(f"Updated Tuple: ", tuple)
+
+#Delete
+tuple=("Arjun", "Riya", "Madhav")
+print(f"Deleted Tuple: ", tuple)
+
+
+
+Output:
+Original List:  ('Arjun', 'Riya', 'Madhav', 'Aditi')
+Added List:  ('Arjun', 'Riya', 'Madhav', 'Aditi', 'Ishika')
+Updated List:  ('Arjun', 'Piya', 'Madhav', 'Aditi', 'Ishika')
+Deleted List:  ('Arjun', 'Riya', 'Madhav')
+
+
+
+#Dictionary 
+dict = {101:"Aditi", 102:"Ishi", 103:"Motu"}
+print(f"Original Dictionary: ", dict)
+
+#Add - []
+dict[104] = "Anaya"
+print(f"Added Dictionary: ", dict)
+
+#Update - []
+dict[102] = "Ishu"
+print(f"Updated Dictionary: ", dict)
+
+#Delete - del []
+del dict[103]
+print(f"Deleted Dictionary: ", dict)
+
+Output:
+Original Dictionary:  {101: 'Aditi', 102: 'Ishi', 103: 'Motu'}
+Added Dictionary:  {101: 'Aditi', 102: 'Ishi', 103: 'Motu', 104: 'Anaya'}
+Updated Dictionary:  {101: 'Aditi', 102: 'Ishu', 103: 'Motu', 104: 'Anaya'}
+Deleted Dictionary:  {101: 'Aditi', 102: 'Ishu', 104: 'Anaya'}
