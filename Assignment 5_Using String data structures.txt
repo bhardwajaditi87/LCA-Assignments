@@ -1,0 +1,71 @@
+#Using String data structures
+
+import re
+string = input("Enter String: ")
+#only alphabetical values
+
+if re.fullmatch("[a-zA-Z0-9]+", string):
+    print("Valid string")
+else:
+    print("Invalid string")
+
+Output:
+Enter String:  ishi 
+Valid string
+
+
+
+#only need to import re once
+string = input("Enter String: ")
+#only numerical values
+
+if re.fullmatch("[a-zA-Z0-9]+", string):
+    print("Valid string")
+else:
+    print("Invalid string")
+
+Output:
+Enter String:  984
+Valid string
+
+
+
+string = input("Enter String: ")
+#number and letter values
+
+if re.fullmatch("[a-zA-Z0-9]+", string):
+    print("Valid string")
+else:
+    print("Invalid string")
+
+Output:
+Enter String:  73ndud947
+Valid string
+
+
+
+string = input("Enter String: ")
+#special character values
+
+if re.fullmatch("[a-zA-Z0-9]+", string):
+    print("Valid string")
+else:
+    print("Invalid string")
+
+Output:
+Enter String:  d$jod8!
+Invalid string
+
+
+
+string = input("Enter String: ")
+#space in string
+
+if re.fullmatch("[a-zA-Z0-9]+", string):
+    print("Valid string")
+else:
+    print("Invalid string")
+
+Output:
+Enter String:  sky is pink
+Invalid string
