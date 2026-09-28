@@ -1,0 +1,19 @@
+#To find the largest of 3 numbers
+
+a = int(input("Enter first no: "))
+b = int(input("Enter second no: "))
+c = int(input("Enter third no: "))
+
+if a>=b and a>=c:
+    print("The largest number is: ", a)
+elif b>=a and b>=c:
+    print("The largest number is: ", b)
+else:
+    print("The largest number is: ", c)
+
+
+Output: 
+Enter first no:  457
+Enter second no:  785
+Enter third no:  345
+The largest number is:  785
